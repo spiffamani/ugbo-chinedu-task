@@ -22,12 +22,12 @@ switch (firstDigit) {
       return validateCardLength("Visa", cardNumber);
     case 5:
       return validateCardLength("MasterCard", cardNumber);
-    case 6:
-      return validateCardLength("Discover", cardNumber);
     case 3:
       return validateCardLength("AmericanExpress", cardNumber);
+    case 6:
+      return validateCardLength("Discover", cardNumber);
     default:
-      return { valid: false, message: "Unknown card issuer" };
+      return { valid: false,  "Unknown card" };
   }
 }
 
