@@ -31,7 +31,7 @@ switch (firstDigit) {
   }
 }
 
-console.log("Here is my  card number:", validateCardLength([4, 5, 6, 2, 4, 5, 7, 8, 9, 2, 1, 4, 5, 6, 7, 7]))
+console.log("   card number:", validateCardLength([4, 5, 6, 2, 4, 5, 7, 8, 9, 2, 1, 4, 5, 6, 7, 7]))
 
 
 
