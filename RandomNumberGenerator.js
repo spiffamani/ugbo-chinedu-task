@@ -1,29 +1,22 @@
+const prompt = require("prompt-sync")(); 
+let counter = 0;
+let count = 0;
+let total = 0;
 
-const promt  = require("prompt-sync")
-let counter = 0
-let count = 0
-let total = 0
+for (let index = 0; index < 10; index++) { 
+    let firstNumber = Math.floor(Math.random() * 100);
+    let secondNumber = Math.floor(Math.random() * 100);
 
-for(let index = 0; index < 10: index++)
+    if (firstNumber > secondNumber) {
+        let userInput = Number(prompt(`Enter answer: ${firstNumber - secondNumber} `));
+        total = firstNumber - secondNumber;
 
-let firstnumber = Math.floor(Math.random() *100)
-let secondnumber = Math.floor(Math.random() *100)
-
-if (firstnumber > secondnumber)
-
-input   = number("Enter answer ", firstnumber - secondnumber)
- total = firstnumber - secondnumber
-
-
-while(total <= 2)
-
-if (total == number)
-count++
-console.log("Correct answer gotten Is", count)
-
-
-else if ( total  != number){
-
-counter++ ;
-console.log(" failed answer gotten is ":  counter)
- 
+        if (userInput === total) { // Corrected logic
+            count++;
+            console.log("Correct answer gotten is:", count);
+        } else {
+            counter++;
+            console.log("Failed answer gotten is:", counter);
+        }
+    }
+}
