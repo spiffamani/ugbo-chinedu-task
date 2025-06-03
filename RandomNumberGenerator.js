@@ -6,8 +6,8 @@ let total = 0
 
 for(let index = 0; index < 10: index++)
 
-let firstnumber = MAth.floor(Math.random() *100)
-let secondnumber = MAth.floor(Math.random() *100)
+let firstnumber = Math.floor(Math.random() *100)
+let secondnumber = Math.floor(Math.random() *100)
 
 if (firstnumber > secondnumber)
 
@@ -22,7 +22,7 @@ count++
 console.log("Correct answer gotten Is", count)
 
 
-else if ( total  != usernumber){
+else if ( total  != number){
 
 counter++ ;
 console.log(" failed answer gotten is ":  counter)
